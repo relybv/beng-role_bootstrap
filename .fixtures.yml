@@ -10,6 +10,8 @@ fixtures:
     ntp:
       repo: "https://github.com/puppetlabs/puppetlabs-ntp.git"
       ref: "4.2.0"
-
+    puppet: "https://github.com/abstractitptyltd/abstractit-puppet.git"
+    inifile: "https://github.com/puppetlabs/puppetlabs-inifile.git"
+    apt: "https://github.com/puppetlabs/puppetlabs-apt.git"
   symlinks:
     role_bootstrap: "#{source_dir}"
