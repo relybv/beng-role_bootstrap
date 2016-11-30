@@ -3,8 +3,6 @@ fixtures:
     stdlib:
       repo: "https://github.com/puppetlabs/puppetlabs-stdlib.git"
       ref: "4.12.0"
- 
-# role module layout, include profile base and ntp module
     profile_base: "https://github.com/relybv/beng-profile_base.git"
     ntp:
       repo: "https://github.com/puppetlabs/puppetlabs-ntp.git"
