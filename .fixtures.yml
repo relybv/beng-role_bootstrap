@@ -10,5 +10,12 @@ fixtures:
     puppet: "https://github.com/abstractitptyltd/abstractit-puppet.git"
     inifile: "https://github.com/puppetlabs/puppetlabs-inifile.git"
     apt: "https://github.com/puppetlabs/puppetlabs-apt.git"
+    firewall: "https://github.com/puppetlabs/puppetlabs-firewall.git"
+    snmp: "https://github.com/razorsedge/puppet-snmp.git"
+    vmwaretools: "https://github.com/craigwatson/puppet-vmwaretools.git"
+    openvmtools: "https://github.com/razorsedge/puppet-openvmtools.git"
+    vsftpd: "https://github.com/thias/puppet-vsftpd.git"
+    beng_nrpe: "https://github.com/relybv/beng-beng_nrpe.git"
+    beng_fw: "https://github.com/relybv/beng-beng_fw.git"
   symlinks:
     role_bootstrap: "#{source_dir}"
