@@ -40,7 +40,12 @@ if which apt-get > /dev/null 2>&1; then
     echo "Using yum"
 fi
 
-apt-get install git bundler zlib1g-dev libaugeas-ruby -y -q || yum install -y git bundler zlib-devel
+if which apt-get > /dev/null 2>&1; then
+ apt-get install git bundler zlib1g-dev libaugeas-ruby -y -q 
+else
+ yum install -y git bundler zlib-devel
+fi 
+
 
 # get or update repo
 if [ -d /root/role_bootstrap ]; then
