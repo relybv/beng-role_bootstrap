@@ -17,7 +17,7 @@ RSpec.configure do |c|
     hosts.each do |host|
       on(host ,'mkdir -p /tmp/modules')
       scp_to host, "#{proj_root}/spec/fixtures/modules", "/tmp", {:ignore => ["role_bootstrap"]}
-      on(host,'mv /tmp/modules/* /etc/puppet/modules')
+      on(host,'mv /tmp/modules/* /etc/puppetlabs/code/modules/')
     end
   end
 end

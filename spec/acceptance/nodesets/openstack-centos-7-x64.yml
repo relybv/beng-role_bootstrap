@@ -1,12 +1,12 @@
 HOSTS:
-  debian-76-x64:
+  centos-7-x64:
     roles:
       - master
-    platform: debian-7-amd64
-    flavor: ha_localdisk.1c.1r.10h
+    platform: centos-7-amd64
+    flavor: ha_localdisk.2c.2r.60h
     hypervisor: openstack
-    image: "debian-7-amd64"
-    user: debian
+    image: "centos7-x64"
+    user: centos
 
 CONFIG:
   log_level: info
