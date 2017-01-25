@@ -3,6 +3,7 @@ require 'puppet/version'
 require 'puppet/vendor/semantic/lib/semantic' unless Puppet.version.to_f < 3.6
 require 'puppet-lint/tasks/puppet-lint'
 require 'puppet-syntax/tasks/puppet-syntax'
+require 'ci/reporter/rake/rspec'
 
 ENV['STRICT_VARIABLES'] = 'no'
 
@@ -52,6 +53,11 @@ end
 
 task :setbeaker_env do
   system("BEAKER=true rake beaker")
+end
+
+desc "Run spec using ci_reporter. Run as: bundle exec rake ci:all"
+namespace :ci do
+  task :all => ['ci:setup:rspec', 'spec']
 end
 
 desc "Run beaker using rspec .fixtures.yml."
