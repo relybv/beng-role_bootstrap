@@ -3,7 +3,8 @@ require 'puppet/version'
 require 'puppet/vendor/semantic/lib/semantic' unless Puppet.version.to_f < 3.6
 require 'puppet-lint/tasks/puppet-lint'
 require 'puppet-syntax/tasks/puppet-syntax'
-require 'ci/reporter/rake/rspec'
+# patched for new rh version, find out if this needed for testing
+# require 'ci/reporter/rake/rspec'
 
 ENV['STRICT_VARIABLES'] = 'no'
 
